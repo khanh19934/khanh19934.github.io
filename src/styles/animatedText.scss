@@ -1,11 +1,11 @@
 .word {
-    display: inline-flex;
+    display: inline-block;
     font-size: 1.3rem;
-   
+    padding-top: 58%;
 }
 .word span {
     position: absolute;
-    font-size: 3rem;
+    font-size: 3vw;
     font-family: 'Oswald', sans-serif;
     overflow: hidden;
     animation: animate 10s linear infinite;
