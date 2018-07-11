@@ -1,1 +1,2 @@
-console.log('worked')
+// @flow
+import './index.scss';
