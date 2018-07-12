@@ -1,0 +1,19 @@
+.landing {
+    height: 100vh;
+    background-color: pink;
+    &__title {
+        font-family: $oswald;
+        font-weight: 200;
+        font-size: $extra-large-size;
+    }
+    &--title-section {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    &__text {
+        font-size: $large-size;
+        font-family: $oswald;
+        font-weight: 200;
+    }
+}

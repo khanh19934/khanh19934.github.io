@@ -1,29 +1,9 @@
 @import '~normalize.css/normalize';
 @import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
-@import "styles/animatedText.scss";
+@import 'styles/helpers/_variables.scss';
+@import 'styles/helpers/_placeholder.scss';
+@import 'styles/layout/_grid.scss';
+@import 'styles/components/animatedText.scss';
+@import 'styles/pages/_landing.scss';
 
 
-.container{
-    flex:1;
-}
-
-.home {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    background-color: pink;
-    
-    .flex{
-        display: flex;
-        margin-left: -25%;
-    }
-    .text{
-        font-size: 3vw;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 200;
-        padding-right: 15px;
-    }
-}
