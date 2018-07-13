@@ -2,33 +2,41 @@ const loadingPage = document.getElementById('loading');
 const rootApp = document.getElementById('root');
 const progressBar = document.getElementById("progress-bar"); 
 const percentNumberElem = document.getElementById("percent-number");
-const move = () => {
+const move = (number,delay,elem,percentNumberElem,numPerSec) => {
     let width = 1;
-    let id = setInterval(frame, 30);
+    let id = setInterval(frame, delay);
     function frame() {
-        if (width >= 100) {
+        if (width >= number) {
             clearInterval(id);
         } else {
+            if(numPerSec){
+                width+numPerSec;
+            }
             width++; 
-            progressBar.style.width = width + '%'; 
-            percentNumberElem.innerHTML = width * 1 + '%';
+            elem.style.width = width + '%';
+            if(percentNumberElem){
+                percentNumberElem.innerHTML = width * 1 + '%';
+            }else {
+                return;
+            }  
         }
     }
 }
 
 const fakeLoadingScreen = () => {
-    move()
+    move(100,10,progressBar,percentNumberElem)
     setTimeout(() => {
         loadingPage.style.display = "none";
-    },3500);
+    },2300);
     setTimeout(() => {
         loadingPage.classList.add("slideAnimation");
         rootApp.style.display = "flex";
-    },3000);
+    },1600);
 }
 
 
 
 fakeLoadingScreen();
 
+export {move}
 export default fakeLoadingScreen;

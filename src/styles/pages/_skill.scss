@@ -20,7 +20,30 @@
         font-family: $oswald;
         font-weight: 200;
         font-size: 1.2vw;
+        line-height: 2;
     }
+    &__text {
+        color: white;
+        font-family: $oswald;
+        font-weight: 400;
+        font-size: 1.4vw;
+    }
+}
+
+#progress-skill {
+    width: 85%;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.progress-bar {
+    width: 1%;
+    height:0.5vh;
+    background-color: white;
+}
+.animated {
+    @extend %slidein
 }
 
 @media screen and (max-width: 576px) {

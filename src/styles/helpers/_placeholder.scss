@@ -1,0 +1,37 @@
+%slidein {
+    animation-name: slideIn;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+    transform-origin: center bottom;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-fill-mode: both;
+    -webkit-transform-origin: center bottom;
+}
+
+
+@-webkit-keyframes slideIn {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+@keyframes slideIn {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}

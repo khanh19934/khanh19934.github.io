@@ -297,6 +297,34 @@ template {
 [hidden] {
   display: none; }
 
+.landing--page__title, .animated {
+  animation-name: slideIn;
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-fill-mode: both;
+  -webkit-transform-origin: center bottom; }
+
+@-webkit-keyframes slideIn {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideIn {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
 @media screen and (max-width: -1px) {
   .hidden-xs-down {
     display: none !important; } }
@@ -337,7 +365,7 @@ template {
     display: none !important; } }
 
 .container {
-  max-width: 768px;
+  max-width: 992px;
   margin: 0 auto; }
   .container--fluid {
     margin: 0;
@@ -657,33 +685,7 @@ template {
     color: #373737;
     font-family: "Oswald";
     font-weight: 360;
-    font-size: 4.3vw;
-    animation-name: slideIn;
-    animation-duration: 1.2s;
-    animation-fill-mode: both;
-    transform-origin: center bottom;
-    -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 1.2s;
-    -webkit-animation-fill-mode: both;
-    -webkit-transform-origin: center bottom; }
-
-@-webkit-keyframes slideIn {
-  from {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    visibility: visible; }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-
-@keyframes slideIn {
-  from {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    visibility: visible; }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
+    font-size: 4.3vw; }
 
 @media screen and (max-width: 576px) {
   .landing--page {
@@ -714,7 +716,13 @@ template {
     height: 100vh;
     z-index: 3; }
   .introduce--page__content {
-    font-size: 1.2vw; }
+    font-size: 1.2vw;
+    font-family: "Oswald";
+    font-weight: 200;
+    line-height: 2;
+    word-spacing: normal;
+    padding-left: 3vw;
+    padding-right: 3vw; }
 
 @media screen and (max-width: 576px) {
   .introduce--page__title-section {
@@ -745,7 +753,24 @@ template {
     color: white;
     font-family: "Oswald";
     font-weight: 200;
-    font-size: 1.2vw; }
+    font-size: 1.2vw;
+    line-height: 2; }
+  .skill--page__text {
+    color: white;
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 1.4vw; }
+
+#progress-skill {
+  width: 85%;
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid white; }
+
+.progress-bar {
+  width: 1%;
+  height: 0.5vh;
+  background-color: white; }
 
 @media screen and (max-width: 576px) {
   .skill--page__title {
