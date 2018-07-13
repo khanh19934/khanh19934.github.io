@@ -1,0 +1,45 @@
+.skill--page {
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    position: absolute;
+    top: 200vh;
+    z-index: 2;
+    &__title {
+        color: #f8f8f8;
+        font-family: $oswald;
+        font-weight: 400;
+        font-size: $large-size;
+    }
+    &__header {
+        display: flex;
+        justify-content: center;
+    }
+    &__introduce {
+        color: white;
+        font-family: $oswald;
+        font-weight: 200;
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skill--page {
+        &__title {
+            color: #f8f8f8;
+            font-family: $oswald;
+            font-weight: 400;
+            font-size: $large-size + 4.4vw;
+        }
+        &__header {
+            display: flex;
+            justify-content: center;
+        }
+        &__introduce {
+            color: white;
+            font-family: $oswald;
+            font-weight: 200;
+            font-size: 4vw;
+        }
+    }
+   }

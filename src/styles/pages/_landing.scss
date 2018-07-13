@@ -1,19 +1,35 @@
-.landing {
+.landing--page {
+    background-color: white;
     height: 100vh;
-    background-color: pink;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    z-index: 1;
     &__title {
+        color: $charcoal;
         font-family: $oswald;
-        font-weight: 200;
-        font-size: $extra-large-size;
+        font-weight: 360;
+        font-size: $large-size + 0.3vw;
     }
-    &--title-section {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-    &__text {
-        font-size: $large-size;
-        font-family: $oswald;
-        font-weight: 200;
-    }
+    
 }
+
+@media screen and (max-width: 576px) {
+    .landing--page{
+        background-color: white;
+        height: 100vh;
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -1;
+        &__title {
+            color: $charcoal;
+            font-family: $oswald;
+            font-weight: 300;
+            font-size: $large-size + 4vw;
+        }
+    }
+ }

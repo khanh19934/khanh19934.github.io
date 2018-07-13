@@ -645,18 +645,93 @@ template {
     opacity: 0;
     transform: translateY(30px); } }
 
-.landing {
+.landing--page {
+  background-color: white;
   height: 100vh;
-  background-color: pink; }
-  .landing__title {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  z-index: 1; }
+  .landing--page__title {
+    color: #373737;
+    font-family: "Oswald";
+    font-weight: 360;
+    font-size: 4.3vw; }
+
+@media screen and (max-width: 576px) {
+  .landing--page {
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1; }
+    .landing--page__title {
+      color: #373737;
+      font-family: "Oswald";
+      font-weight: 300;
+      font-size: 8vw; } }
+
+.introduce--page {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  position: absolute;
+  top: 100vh; }
+  .introduce--page__title-section {
+    height: 100vh;
+    z-index: -1; }
+  .introduce--page__content-section {
+    height: 100vh;
+    z-index: 3; }
+  .introduce--page__content {
+    font-size: 1.2vw; }
+
+@media screen and (max-width: 576px) {
+  .introduce--page__title-section {
+    height: 0vh;
+    z-index: -1; }
+  .introduce--page__content-section {
+    height: 100vh;
+    z-index: 3; }
+  .introduce--page__content {
+    font-size: 3.6vw; } }
+
+.skill--page {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  position: absolute;
+  top: 200vh;
+  z-index: 2; }
+  .skill--page__title {
+    color: #f8f8f8;
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 4vw; }
+  .skill--page__header {
+    display: flex;
+    justify-content: center; }
+  .skill--page__introduce {
+    color: white;
     font-family: "Oswald";
     font-weight: 200;
-    font-size: 7vw; }
-  .landing--title-section {
-    display: flex;
-    justify-content: center;
-    align-content: center; }
-  .landing__text {
-    font-size: 4vw;
+    font-size: 1.2vw; }
+
+@media screen and (max-width: 576px) {
+  .skill--page__title {
+    color: #f8f8f8;
     font-family: "Oswald";
-    font-weight: 200; }
+    font-weight: 400;
+    font-size: 8.4vw; }
+  .skill--page__header {
+    display: flex;
+    justify-content: center; }
+  .skill--page__introduce {
+    color: white;
+    font-family: "Oswald";
+    font-weight: 200;
+    font-size: 4vw; } }
